@@ -10,15 +10,23 @@
   <body>
     <main class="main">
       <section class="content">
-        <img src="" alt="" width="150px" height="150px" class="img-login" />
+        <img
+          src="img/logo.png"
+          alt=""
+          width="150px"
+          height="150px"
+          class="img-login"
+        />
         <h1 class="title">Login</h1>
-        <form action="" class="form-login">
+        <form action="/" class="form-login">
           <label for="loginEmail" class="label-login">EMAIL</label>
           <input
             type="email"
             placeholder="your@email.com"
             class="input-login"
             name="loginEmail"
+            required
+            autocomplete="on"
           />
           <label for="loginPassword" class="label-login">PASSWORD</label>
 
@@ -27,10 +35,13 @@
             placeholder="*****"
             class="input-login"
             name="loginPassword"
+            required
           />
-          <a href="#">Forgot your password?</a>
-          <a href="#">Register</a>
-          <button>GO!</button>
+          <div class="reset-register-box">
+            <a href="#">Forgot your password?</a>
+            <a href="#">Register</a>
+          </div>
+          <button class="btn-login" type="submit">LOGIN</button>
         </form>
       </section>
     </main>
